@@ -19,3 +19,6 @@ I am Still building out the Programm & Hardware
 ### Maybie
 - Rotary Encoder
 - Display for Gear / RPM
+
+# Resources
+- Beamng Outgage: https://github.com/RodionGromo/outGauge_python/
