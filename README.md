@@ -1,7 +1,7 @@
 # Buttonbox-Pico
 Serial Communication between Pico (2) &amp; PC
 
-I am Still building out the Programm
+I am Still building out the Programm & Hardware
 
 # What i am adding
 - Start Stop Engine Button (BEAMNG) (Red / Green)
