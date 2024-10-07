@@ -1,24 +1,26 @@
 # Buttonbox-Pico
-Serial Communication between Pico (2) &amp; PC
+A custom controller interface for **BeamNG**, featuring serial communication between a Raspberry Pi Pico (2) and a PC.
 
-I am Still building out the Programm & Hardware
+> **Status**: Currently under development (both software and hardware components).
 
-# What i am adding
-- Start Stop Engine Button (BEAMNG) (Red / Green)
-- X Buttons
-- LED For Status
-- Controller emulation or Keyboard on PC side for Input
+## Planned Features
+- **Start/Stop Engine Button**: Red/Green button specifically for controlling the engine in BeamNG.
+- **Custom Buttons**: Multiple configurable buttons for various in-game actions.
+- **LED Status Indicator**: Visual feedback for different status updates.
+- **Controller Emulation or Keyboard Input**: Software emulation for inputs on the PC side.
 
-# Functions
-## Raspberry PI
-- Check for Buttons / Change Color
-## PC
-- Emulate Input
-- Beamng Outgage
+## Functional Overview
 
-### Maybie
-- Rotary Encoder
-- Display for Gear / RPM
+### Raspberry Pi Pico (2)
+- Monitors button states and controls LED colors based on status.
 
-# Resources
-- Beamng Outgage: https://github.com/RodionGromo/outGauge_python/
+### PC Software
+- Emulates inputs (controller/keyboard) based on signals received from the Pico.
+- Integrates BeamNG **OutGauge** for real-time data communication.
+
+### Additional Features (Future Considerations)
+- **Rotary Encoder**: For enhanced input controls.
+- **Display**: Shows information like gear position or RPM.
+
+## Resources
+- [BeamNG OutGauge](https://github.com/RodionGromo/outGauge_python/): A Python implementation for interfacing with BeamNG's OutGauge API.
