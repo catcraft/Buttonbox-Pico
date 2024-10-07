@@ -16,15 +16,16 @@ def blink_led(times, interval):
 
 # Function to handle the handshake
 def handshake():
+    time.sleep(1)  # Wait for 1 second before starting the handshake to allow serial initialization
     while True:
         # Wait for the "SYN" message
         v = sys.stdin.readline().strip()
         if "syn" in v.lower():
-            print('syn-ack\n')  # Send SYN-ACK response
+            print('syn-ack\r\n')  # Send SYN-ACK response with \r\n for proper newline
             time.sleep(0.2)
             v = sys.stdin.readline().strip()
             if "ack" in v.lower():
-                blink_led(3, 0.2)  # Blink twice on successful handshake
+                blink_led(3, 0.2)  # Blink three times on successful handshake
                 return True
         time.sleep(0.1)  # Avoid busy waiting
 
